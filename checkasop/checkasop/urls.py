@@ -20,5 +20,7 @@ from dashboard import views
 
 urlpatterns = [
     path('', views.index, name='home'),
+    path('subs', views.view_sub_list, name='subs'),
+    path('snls', views.view_snls_list, name='snls'),
     path('admin/', admin.site.urls),
 ]
