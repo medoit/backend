@@ -3,7 +3,7 @@ from .models import Sub, Snls
 
 def load_sub():
     Sub.objects.all().delete()
-    filepath = "../source/sub/t_data_sub_d.txt"
+    filepath = "../source/sub/t_data_sub.txt"
     with open(filepath) as file:
         for line in file:
             el = line.split(';')
